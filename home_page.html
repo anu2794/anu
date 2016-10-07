@@ -1,0 +1,114 @@
+<html>
+	<head>
+	<style>
+		.button {
+    background-color:#FF9933;
+    border: none;
+    color:white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+	border-radius: 8px;
+	font-size:20px;
+	width: 30%;
+	height: 35
+	
+}
+.button:hover {
+	color:white;
+	background-color:purple;
+}
+.body {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("skyscrapers.jpg");
+  background-size:cover;
+
+}
+
+h1{
+	color:white;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 46px;
+	font-weight: bold;
+	text-shadow: 1px 1px;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+}
+
+.home a{
+	background-color:white;
+}
+
+.content {
+	color:white;
+	font-size:30px;
+	position:center;
+	
+}
+
+
+
+.div > img {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 20%;
+  padding: 20px 10px;
+}
+	</style>
+	</head>
+	<body class="body">
+		<image src="aricent.png" style="position:left;float:left">
+		<center><h1>WIKI PAGE - VIAVI</h1></center>
+		<br/><center>
+		<table class ="content" style="width:80%">
+			<tr>
+			<td id="tdd">IT service delivery is critical to business success. With an influx of disruptive technologies and the rapid rate of change, 
+		network teams need end-to-end visibility and actionable intelligence to deliver optimal network performance</td>
+			</tr>
+		</table></center>
+		<br/><br/><br/>
+		<center>
+		<div class="divv">
+			<a class="button" href="internal_links.html">Internal Links</a><br/>
+			<a class="button" href="external_links.html">External Links</a><br/>
+			<a class="button" href='skills.html'>Skills / Work Area</a><br/>
+			<a class="button" href='lab_details.html'>Lab Details</a><br/>
+			<a class="button" href='team.html'>Team Information</a><br/>
+			<a class="button" href='ext_skills.html'>Other External Skills</a><br/>
+		</div>
+		<script>
+		var col=0;
+		function changeMarqueeColor() 
+		{
+			if(col==0)
+			{
+				document.getElementById("tdd").style.color="white";
+				col=2;
+			}
+			else if(col==2)
+			{
+				document.getElementById("tdd").style.color="khaki";
+				col=1;
+			}
+			else
+			{
+				document.getElementById("tdd").style.color="orange";
+				col=0;
+			}
+		}
+		setInterval(changeMarqueeColor,1500);
+		</script>
+		</center><br/><br/>
+		<div class="module div">
+		<img src="viavi.png" style="size:10px;float:right;bottom:0"/>
+		</div>
+		
+	</body>
+</html>
